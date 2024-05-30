@@ -1,0 +1,248 @@
+
+/*DETALLES*/
+
+.container-detalles {
+  font-family: "Poppins", sans-serif;
+  margin-top: 20%;
+  display: block;
+  justify-content: center; /* Centra horizontalmente el contenido */
+  padding: 3rem; /* Añade un espacio uniforme alrededor del contenedor */
+}
+
+.post {
+  background-color: #f9f9f9; /* Color de fondo del artículo */
+  border-radius: 15px; /* Borde redondeado */
+  overflow: hidden; /* Oculta cualquier contenido que se desborde */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  position: relative;
+}
+
+.contenedor {
+  display: flex;
+  
+}
+
+.contenedor img {
+  max-width: 100%;
+  border-top-left-radius: 15px; /* Hace que la esquina superior izquierda de la imagen sea redondeada */
+  border-bottom-left-radius: 15px; /* Hace que la esquina inferior izquierda de la imagen sea redondeada */
+}
+
+.contenedor .titulo small {
+  font-weight: 300;
+}
+
+.contenedor h4{
+  font-size: 0.9em;
+}
+
+.contenedor p{
+  font-size: 0.9em;
+}
+
+.contenedor .size ul{
+  display: flex;
+  width: 30%;
+  justify-content: space-evenly;
+}
+
+.contenedor .size ul li{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9em;
+  border: solid 1px #000000;
+  padding: 0.6em;
+}
+
+.contenedor .size ul li:hover{
+  background-color: #000000;
+  color: #fff;
+}
+
+.contenedor .price{
+  display: flex;
+}
+
+.detalles {
+  flex-grow: 1;
+  padding: 1.5rem; 
+}
+
+.tittle-detalles{
+  display: flex;
+  align-items: center;
+  width: 200px;
+  margin: 0 auto;
+}
+
+
+.detalles h4 {
+  margin-top: 2rem;
+}
+
+.detalles p {
+  margin: 0.5rem 0;
+}
+
+
+.btn-detalles {
+  margin-left: 70%;  
+}
+
+.cart-button {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.cart-button.no-background {
+  background: none; /* Establece el fondo transparente */
+}
+
+.detalles button {
+  margin-bottom: 5%;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding: 0.8em 0.9em;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+.detalles button:hover {
+  background-color: #0c19227e;
+  color: black;
+}
+
+
+
+/*Sugerencias:*/
+.tittle-clothes{
+    position: absolute;
+    padding-left: 20%;
+    padding-top: 11%;
+    font-size: 1.5rem;
+  }
+  
+  .container {
+      max-width: 900px;
+      width: 95%;
+      margin: 0 auto;
+      margin-bottom: 15%;
+  }
+    
+    .slider-wrapper {
+      position: relative;
+    }
+    
+    .slider-wrapper .slide-button {
+      position: absolute;
+      top: 50%;
+      outline: none;
+      border: none;
+      height: 50px;
+      width: 50px;
+      z-index: 5;
+      color: #fff;
+      display: flex;
+      cursor: pointer;
+      font-size: 2.2rem;
+      background: #000000;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      transform: translateY(-50%);
+    }
+    
+    .slider-wrapper .slide-button:hover {
+      background: #404040;
+    }
+    
+    .slider-wrapper .slide-button#prev-slide {
+      left: -25px;
+      display: none;
+    }
+    
+    .slider-wrapper .slide-button#next-slide {
+      right: -25px;
+    }
+    
+    .slider-wrapper .image-list {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      gap: 16px;
+      font-size: 0;
+      list-style: none;
+      margin-top: 250px;
+      margin-bottom: 50px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    
+    .slider-wrapper .image-list::-webkit-scrollbar {
+      display: none;
+    }
+    
+    .slider-wrapper .image-list .image-item {
+      border: solid 2px black;
+      border-radius: 10px;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+    
+    .container .slider-scrollbar {
+      height: 24px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      display: none;
+    }
+    
+    .slider-scrollbar .scrollbar-track {
+      background: #ccc;
+      width: 100%;
+      height: 12px;
+      display: flex;
+      align-items: center;
+      border-radius: 4px;
+      position: relative;
+    }
+    
+    .slider-scrollbar:hover .scrollbar-track {
+      height: 14px;
+    }
+    
+    .slider-scrollbar .scrollbar-thumb {
+      position: absolute;
+      background: #000000;
+      top: 0;
+      bottom: 0;
+      width: 50%;
+      height: 100%;
+      cursor: grab;
+      border-radius: inherit;
+    }
+    
+    .slider-scrollbar .scrollbar-thumb:active {
+      cursor: grabbing;
+      height: 12px;
+      top: 1px;
+    }
+    
+    .slider-scrollbar .scrollbar-thumb::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: -10px;
+      bottom: -10px;
+      
+    }
